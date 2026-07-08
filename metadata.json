@@ -1,0 +1,6 @@
+{
+  "name": "DocuFlowPlus",
+  "description": "An elegant, client-side suite of PDF and image tools including compression, merging, splitting, watermarking, image conversion, and page numbering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

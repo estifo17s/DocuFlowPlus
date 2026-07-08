@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-space: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  /* Custom Color Palette */
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-brass: var(--brass);
+  --color-brass-dim: var(--brass-dim);
+  --color-teal: var(--teal);
+  --color-red: var(--red);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+}
+
+:root {
+  --ink: #14171F;
+  --paper: #F7F5F0;
+  --panel: #FFFFFF;
+  --brass: #C88A3A;
+  --brass-dim: #E8CFA8;
+  --teal: #3E7C6B;
+  --red: #C1483B;
+  --line: #E4E0D6;
+  --muted: #6B6A64;
+}
+
+html.dark {
+  --ink: #F2F0E9;
+  --paper: #15171C;
+  --panel: #1D2027;
+  --brass: #E0A85C;
+  --brass-dim: #4A3D26;
+  --teal: #5FAF9A;
+  --red: #E08277;
+  --line: #2C2F38;
+  --muted: #9A988F;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "Cormorant Garamond", serif;
+  transition-property: background-color, color, border-color;
+  transition-duration: 200ms;
+}
